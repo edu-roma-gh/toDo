@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+  </style>
+  <title>To Do List</title>
+</head>
+<body>
+  <div>
+    <h1>Todo</h1>
+    <h2 id="displayTime"></h2>
+  </div>
+  <div class="mainCont">
+    <div class="timeCont">
+      <img src="./assets/pictures/backgroundImage.png" alt="image here">
+    </div>
+    <div class="addNotesCont">
+      <input id="noteInput" type="text" placeholder="✅ Note">
+      <button onclick="addToDo()" id="addToDo">+</button>
+    </div>
+    <div id="listContainer" class="notes"> 
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
