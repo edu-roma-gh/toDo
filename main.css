@@ -20,6 +20,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #EEEEEE;
+  flex-wrap: wrap;
   h1 {
     font-size: 96px;
     font-weight: 700;
@@ -42,6 +43,8 @@ body {
   .notes {
     width: 85%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -118,6 +121,10 @@ body {
   }
 }
 
+.markedDone {
+  text-decoration: line-through;
+}
+/* 
 @media (max-width:780px) {
   body {
     h1 {
@@ -128,6 +135,6 @@ body {
     }
   }
 }
-
+ */
 
 
